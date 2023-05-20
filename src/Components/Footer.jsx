@@ -32,7 +32,7 @@ const Footer = () => {
 
                 </div>
 
-                <div className=' flex flex-col items-start md:items-center justify-center pt-4'>
+                <div className=' flex flex-col items-start md:items-center justify-center pt-4 font-medium'>
                     <div>
                         <p>
                             Links
