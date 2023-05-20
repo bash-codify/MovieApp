@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html{  
+  scroll-behavior: smooth;
+
+}
+
+body{
+    background: #202b3f;
+    color: #efefef;
+    font-family: 'Barlow', sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+input[type=search]::-ms-clear {  
+ display: none; 
+ width : 0; 
+ height: 0; 
+ }
+ input[type=search]::-ms-reveal { 
+ display: none; 
+ width : 0; 
+ height: 0; 
+ }
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { 
+display: none; 
+}
+
+
+
+.shadow-box{
+  box-shadow: rgba(149, 157, 165, 0.11) 0px 0px 13px;
+  border-radius: 1rem;
+}
+
+.shadow-box2{
+  box-shadow: rgba(149, 157, 165, 0.11) 0px 0px 13px;
+  
+}
+
+
+
+/* SNAP SCROLL SECTION */
+
+.slider-container{
+
+  overflow-x: hidden;
+
+}
+
+
+.slider{
+  display: none;
+  
+}
+
+.active{
+  display: block;
+  transform: translateX(0);
+
+}
+
+.next{
+ 
+  transform: translateX(100%);
+}
+
+.last{
+ 
+  transform: translateX(-100%);
+}
+
+.btndisable{
+  opacity: 0;
+}
+.btnenable{
+  opacity: 1;
+}
+
+
+
+
+
